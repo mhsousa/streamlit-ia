@@ -6,7 +6,7 @@ import io
 import time
 
 # ===== CONFIGURAÇÃO DA API =====
-API_KEY = st.secret("jhghhj")
+API_KEY = st.secrets["API_KEY"]
 
 # ===== TEMPLATES DE MINUTAS =====
 TEMPLATES_MINUTAS = {
