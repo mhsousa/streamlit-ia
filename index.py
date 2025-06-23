@@ -851,11 +851,7 @@ if st.session_state.messages and st.session_state.messages[-1].get("is_loading",
     processing_time = time.time() - start_time
     
     # Atualizar a mensagem com a resposta
-    if response:
-        # Adicionar informações de processamento
-        st.session_state.messages[-1]["assistant"] = response_with_info
-    else:
-        st.session_state.messages[-1]["assistant"] = "❌ Erro ao obter resposta do Claude 4. Tente novamente."
+
     
     st.session_state.messages[-1]["is_loading"] = False
     
