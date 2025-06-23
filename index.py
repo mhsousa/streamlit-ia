@@ -978,17 +978,3 @@ st.markdown("""
 </script>
 """, unsafe_allow_html=True)
 
-# Adicionar informações de ajuda no final
-st.markdown("""
-<div style="margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%); border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px);">
-    <h4 style="color: #667eea; margin-bottom: 1rem; font-weight: 600;">⌨️ Atalhos do Teclado</h4>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; font-size: 0.9rem; color: rgba(255, 255, 255, 0.8);">
-        <div><strong>Ctrl + Enter:</strong> Enviar mensagem</div>
-        <div><strong>Ctrl + K:</strong> Focar no campo de texto</div>
-        <div><strong>Ctrl + L:</strong> Nova conversa</div>
-    </div>
-    <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.85rem; color: rgba(255, 255, 255, 0.6);">
-        🤖 <strong>Claude 4 Sonnet</strong> - Modelo com memória de conversa | 📊 Máximo 4.000 tokens por resposta | 🔒 Dados seguros
-    </div>
-</div>
-""", unsafe_allow_html=True)
