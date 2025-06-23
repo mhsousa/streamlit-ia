@@ -685,7 +685,6 @@ with st.container():
     
     with col_clear:
         st.write("")
-        st.write("")
         if st.button("🗑️ Nova Conversa", key="clear_chat", help="Limpar todo o histórico"):
             st.session_state.messages = []
             st.session_state.send_clicked = False
@@ -851,7 +850,12 @@ if st.session_state.messages and st.session_state.messages[-1].get("is_loading",
     processing_time = time.time() - start_time
     
     # Atualizar a mensagem com a resposta
-
+    if response:
+        # Adicionar informações de processamento
+        response_with_info = f"{response}\n\n---\n⏱️ *Processado em {processing_time:.1f}s com Claude 4 Sonnet*"
+        st.session_state.messages[-1]["assistant"] = response_with_info
+    else:
+        st.session_state.messages[-1]["assistant"] = "❌ Erro ao obter resposta do Claude 4. Tente novamente."
     
     st.session_state.messages[-1]["is_loading"] = False
     
@@ -958,4 +962,3 @@ st.markdown("""
     scrollToBottom();
 </script>
 """, unsafe_allow_html=True)
-
