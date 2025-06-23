@@ -59,13 +59,11 @@ st.markdown("""
         display: flex;
         flex-direction: column;
         height: 100vh;
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
         color: #ffffff;
     }
     
     /* Header com gradiente e sombra */
     .chat-header {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         padding: 1.5rem 2rem;
         border-bottom: 2px solid rgba(255, 255, 255, 0.1);
         text-align: center;
@@ -97,7 +95,6 @@ st.markdown("""
         flex: 1;
         overflow-y: auto;
         padding: 0;
-        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     }
     
     /* Mensagens com animações */
