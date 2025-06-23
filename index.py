@@ -175,13 +175,11 @@ st.markdown("""
     
     /* Input area melhorada */
     .input-container {
-        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
         border-top: 2px solid rgba(255, 255, 255, 0.1);
         padding: 2rem;
         position: sticky;
         bottom: 0;
         backdrop-filter: blur(20px);
-        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
     }
     
     .input-wrapper {
