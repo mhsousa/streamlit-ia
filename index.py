@@ -621,22 +621,6 @@ st.markdown("""
 total_messages = len(st.session_state.messages)
 session_duration = (datetime.now() - st.session_state.session_start).seconds // 60
 
-st.markdown(f"""
-<div class="stats-container">
-    <div class="stat-card">
-        <div class="stat-value">{total_messages}</div>
-        <div class="stat-label">Mensagens</div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-value">{session_duration}</div>
-        <div class="stat-label">Minutos</div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-value">Claude 4</div>
-        <div class="stat-label">Modelo</div>
-    </div>
-</div>
-""", unsafe_allow_html=True)
 
 # Container principal do chat
 chat_container = st.container()
@@ -700,6 +684,7 @@ with st.container():
         )
     
     with col_clear:
+        st.write("")
         if st.button("🗑️ Nova Conversa", key="clear_chat", help="Limpar todo o histórico"):
             st.session_state.messages = []
             st.session_state.send_clicked = False
