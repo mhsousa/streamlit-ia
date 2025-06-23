@@ -685,6 +685,7 @@ with st.container():
     
     with col_clear:
         st.write("")
+        
         if st.button("🗑️ Nova Conversa", key="clear_chat", help="Limpar todo o histórico"):
             st.session_state.messages = []
             st.session_state.send_clicked = False
