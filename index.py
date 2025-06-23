@@ -708,9 +708,9 @@ with st.container():
         # Usar valor padrão vazio se mensagem foi enviada
         input_value = "" if st.session_state.get("message_sent", False) else st.session_state.get("current_message", "")
         
-        placeholder_text = "💬 Digite sua mensagem... (Ctrl+Enter para enviar)"
+        placeholder_text = "💬 Digite sua mensagem... "
         if tipo_minuta != "Nenhum":
-            placeholder_text = f"📝 Digite os dados para preencher a minuta de {tipo_minuta}... (Ctrl+Enter para enviar)"
+            placeholder_text = f"📝 Digite os dados para preencher a minuta de {tipo_minuta}... "
         
         user_input = st.text_area(
             "Digite sua mensagem...",
