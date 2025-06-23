@@ -125,11 +125,9 @@ st.markdown("""
     }
     
     .user-message {
-        background: linear-gradient(135deg, #3b4371 0%, #4a5d7a 100%);
     }
     
     .assistant-message {
-        background: linear-gradient(135deg, #2d4a5a 0%, #3a5f6f 100%);
     }
     
     .message-avatar {
