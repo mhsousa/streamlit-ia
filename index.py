@@ -853,7 +853,6 @@ if st.session_state.messages and st.session_state.messages[-1].get("is_loading",
     # Atualizar a mensagem com a resposta
     if response:
         # Adicionar informações de processamento
-        response_with_info = f"{response}\n\n---\n⏱️ *Processado em {processing_time:.1f}s com Claude 4 Sonnet*"
         st.session_state.messages[-1]["assistant"] = response_with_info
     else:
         st.session_state.messages[-1]["assistant"] = "❌ Erro ao obter resposta do Claude 4. Tente novamente."
