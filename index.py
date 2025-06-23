@@ -161,7 +161,7 @@ st.markdown("""
     .message-text {
         flex: 1;
         line-height: 1.7;
-        color: #ffffff;
+        color: #000000;
         white-space: pre-wrap;
         font-family: 'Inter', sans-serif;
         font-size: 15px;
