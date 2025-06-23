@@ -70,7 +70,6 @@ st.markdown("""
         position: sticky;
         top: 0;
         z-index: 100;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(10px);
     }
     
